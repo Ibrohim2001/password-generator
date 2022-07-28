@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #1C1C1C;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #ECFDF5;
+}
+.title {
+  color: #2B283A;
+  font-size: 40px;
+  font-weight: 800;
+}
+.title > span {
+  display: block;
+  margin-top: -10px;
+  color: #10B981;
+}
+.slogan {
+  margin: 1rem 0;
+  color: #6B7280;
+  font-size: 20px;
+}
+.generator_btn,
+.copy_password {
+  width: 190px;
+  height: 42px;
+  color: #fff;
+  background-color: #10B981;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.copy_password {
+  margin-left: 16px;
+}
+.password_field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #2F3E53;
+}
+.password {
+  width: 210px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  color: #10B981;
+  background-color: #273549;
+  border-radius: 6px;
+}
+.lightmode {
+  background-color: #ECFDF5;
+}
+.theme_changer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  color: #fff;
+  background-color: #FECDD3;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.theme_changer .circle {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #F59E0B;
+  border-radius: 50%;
+  margin-left: 0%;
+}
+.theme_changer .light > svg {
+  color: #fff;
+}
+.theme_changer .night {
+  display: none;
+  transition: all 1s ease;
+}
+.active {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #10B981;
+  border-radius: 50%;
+  margin-left: 65%;
+  transition: all 0.3s ease;
+}
